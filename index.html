@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-title">
+        <h2>Kalkulator BMI</h2>
+    </header>
+
+    <main>
+        <!-- Left content -->
+        <section class="left">
+            <!-- Main article -->
+            <article>
+                <p>Berat badan ideal adalah impian semua orang.
+                   Salah satu manfaat menjaga berat badan adalah
+                   menunjang rasa percaya diri. Dengan menjaga berat
+                   badan, kesehatan tubuh juga lebih terjaga. Memiliki
+                   tubuh ideal bukan berarti kita harus punya
+                   badan yang kurus. Cek berat badan ideal dengan
+                   kalkulator BMI (Body Mass Index) atau
+                   Indeks Massa Tubuh di bawah ini.
+                </p>
+            </article>
+
+            <!-- Form -->
+            <section class="form-style">
+                <form>
+                    <div>
+                        <div>Jenis Kelamin</div>
+                        <input type="radio" id="genderP"><label for="gender-pria">Pria</label>
+                        <input type="radio" id="genderW"><label for="gender-wanita">Wanita</label>
+                    </div>
+
+                    <div>
+                        <label>Berat Badan (kg)</label>
+                        <input type="number" id="weight">
+                    </div>
+
+                    <div>
+                        <label>Usia (thn)</label>
+                        <input type="number" id="age">
+                    </div>
+
+                    <div>
+                        <label>Tinggi Badan (cm)</label>
+                        <input type="number" id="height">
+                    </div>
+                
+                    <br>
+                    <div>
+                        <button type="submit" onclick="hitungBmi" class="hitung">Hitung BMI</button>
+                        <input type="reset" class="reset" value="Reset" />
+                    </div>
+                </form>
+            </section>
+
+            <!-- Form article -->
+            <section>
+                <header>
+                    <h3>Keunggulan Fitur</h3>
+                </header>
+                
+                <article>
+                    <p>1. Menghitung berat badan</p>
+                    <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa
+                        dan tidak disarankan untuk busui dan ibu hamil. Jika berat
+                        badan anda jauh dari kata normal, disarankan untuk konsultasi
+                        dengan seseorang dengan syarat seperti dokter.
+                    </p>
+
+                    <p>
+                        Kalkulator ini memberi Anda gambaran tentang perbandingan
+                        berat badan Anda dengan nilai umum. Indeks Massa Tubuh
+                        (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram)
+                        dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Right content -->
+        <section class="right">
+            <!-- Result article -->
+            <article>
+                <header>
+                    <h3>Hasil</h3>
+                </header>
+
+                <!-- Result section hasil-->
+                <section class="hasil">
+                    <p>Hasil BMI anda:</p>
+                    <h2 class="hasil-bmi" id="hasil">0</h2>
+                    <p class="hasil-text" id="article">N/A</p>
+                </section>
+
+                <br>
+                <!-- Result article -->
+                <article class="result-article">
+                    <div style="--color: var(--bbKurang)">
+                        <h4>Berat Badan Kurang</h4>
+                        <p>&lt; 18.5</p>
+                    </div>
+                        
+                    <div style="--color: var(--bbIdeal)">
+                        <h4>Berat Badan Ideal</h4>
+                        <p>18.5 - 24.9</p>
+                    </div>
+
+                    <div style="--color: var(--bbLebih)">
+                        <h4>Berat Badan Lebih</h4>
+                        <p>25.0 - 29.9</p>
+                    </div>
+
+                    <div style="--color: var(--obesitas)">
+                        <h4>Kegemukan / Obesitas</h4>
+                        <p>&ge;  30.0</p>
+                    </div>
+                </article>
+
+                <br>
+                <!-- Result section -->
+                <section>
+                    <p>Cara menjaga gaya hidup sehat sehari-hari yang baik dan benar
+                        adalah bagaimana cara kamu berusaha untuk meningkatkan kualitas
+                        hidup yang lebih baik terutama pada kesehatan.
+                    </p>
+                    <p> Berikut tips 6 cara menjaga gaya hidup sehat yang bisa diterapkan
+                        pada kehidupan kamu sehari-hari:</p>
+                    <p>1. Istirahat yang cukup</p>
+                    <p>2. Memperhatikan asupan makanan</p>
+                    <p>3. Minum air putih</p>
+                    <p>4. Rajin berolahraga</p>
+                    <p>5. Membiasakan hidup bersih</p>
+                    <p>6. Meninggalkan kebiasaan buruk</p>
+                </section>
+
+                <br>
+                <br>
+                <br>
+                <section class="thanks">
+                    <p>Terima kasih telah menggunakan kalkulator ini &#128516;</p>
+                </section>
+            </article>
+        </section>
+
+    </main>
+</body>
+
+<footer>
+    <b>Created by SRI SEPTINA</b>
+</footer>
+
+<script src="js/script.js"></script>
+
+</html>
